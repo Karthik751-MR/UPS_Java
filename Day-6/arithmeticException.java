@@ -1,3 +1,4 @@
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 class arithmeticException{
@@ -14,6 +15,8 @@ class arithmeticException{
             sc.close();
         } catch (ArithmeticException e){
             System.err.println("Error : Performing Division by Zero - " + e);
+        } catch (InputMismatchException e) {
+            System.err.println(e);
         } finally {
             System.out.println("Executed Successfully");
         }
