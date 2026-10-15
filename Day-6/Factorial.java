@@ -3,7 +3,7 @@ public class Factorial {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        System.out.print("Enter a non-negative integer: ");
+        System.out.print("Enter an integer: ");
         int n = sc.nextInt();
 
         long fact = 1;
